@@ -1,0 +1,120 @@
+
+.App {
+  background-color: lightgray;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.container {
+  background-color: slategrey;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.line {
+  padding-top: 10px;
+}
+
+.line:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.kind {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.ingredient{
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.ingredient:hover{
+  color: blue;
+  transition: all ease-in-out .3s;
+}
+
+.ingredient-img{
+  max-width: 130px;
+}
+
+.basket {
+  margin-left: 10px;
+}
+
+.banner {
+  color: black;
+  background-color: lightcoral;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.remove{
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+/* helpers */
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.centered {
+  justify-content: space-between;
+}
+
+.strike-out {
+text-decoration: line-through;
+}
+
+.space-around{
+  margin: 10px;
+}
+
+#Important {
+  font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
